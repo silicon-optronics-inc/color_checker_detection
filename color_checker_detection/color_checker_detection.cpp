@@ -14,7 +14,7 @@ int g_detection_count = 0;
 string g_input_path = "in\\";
 string g_input_img = "image.jpg";
 string g_output_path = "out\\";
-string g_classifier_path = "classifier\\cascade.xml";
+string g_classifier_path = "cascade.xml";
 vector<Rect> g_rets;
 
 // Detect and draw detected object boxes on image
