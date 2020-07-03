@@ -1,7 +1,5 @@
 ﻿#include "pch.h"
-#include <iostream>
 #include <opencv2/opencv.hpp>
-#include "afxcoll.h" //for CString & CStringArray
 #include "color_grids_detection.h"
 
 using namespace std;

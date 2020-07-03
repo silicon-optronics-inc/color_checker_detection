@@ -1,7 +1,5 @@
 #include <string> //for string
 #include "pch.h"
-#include <iostream>
-#include "afxcoll.h" //for CString & CStringArray
 #include <cmath>
 #include "color_grids_detection.h"
 
@@ -34,8 +32,8 @@ void ColorGridsDetection::FilterColorGrid(vector<vector<cv::Point>>& Contours, S
 
 void ColorGridsDetection::FilterOutOverlapPoint(vector<vector<cv::Point>> Contours, vector<Point2f>& centers_position)
 {
-    BYTE inside_contour_count = 0;
-    BYTE ret = 0;
+    unsigned char inside_contour_count = 0;
+    unsigned char ret = 0;
     Point2f temp_center(0.0, 0.0);
 
     for (vector<vector<cv::Point>>::iterator it_contour = Contours.begin(); it_contour != Contours.end();)
