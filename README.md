@@ -20,11 +20,11 @@ It’s a color checker detection utility for each pattern, and environment only 
 ## 3 Usage
 Step1. Set the relative path for OpenCV library in this project’s properties page and then compile this project.
 
-Step2. Create “image” directory in the output directory.
+Step2. Create “image” directory inside the output directory.
 
-Step3. Put an image into the “image” directory you just created.
+Step3. Put an image into the “image” directory just created.
 
-Step4. Run color_checker_detection.exe, and find the inferenced result in the “image” directory.
+Step4. Run color_checker_detection.exe, and find the inferenced result inside the “image” directory.
 
 
 ## 4 Algorithm Concept
