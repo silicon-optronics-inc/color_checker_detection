@@ -1,7 +1,7 @@
 # color_checker_detection
 It’s a color checker detection utility for each pattern, and it only needs to install OpenCV.  
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/demo.gif)  
-※1 This image [source](https://imgur.com/VUiuRTq)
+**※1** This image [source](https://imgur.com/VUiuRTq)
 
 
 ## 1 Features
