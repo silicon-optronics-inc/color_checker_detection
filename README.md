@@ -1,7 +1,7 @@
 # color_checker_detection
-It’s a color checker detection utility for each pattern, and it only needs to install OpenCV.
+It’s a color checker detection utility for each pattern, and it only needs to install OpenCV.  
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/demo.gif)  
-※1 The last image source: https://imgur.com/VUiuRTq
+※1 Last image [source](https://imgur.com/VUiuRTq)
 
 
 ## 1 Features
@@ -34,11 +34,11 @@ Step5. Run color_checker_detection.exe, and you could find the analyzed result i
 
 
 ## 4 Algorithm Concept
-Step1. AI training model
-Through OpenCV - cascade classifier to training the different color checker, and produce training model: cascade.xml
+Step1. AI training model  
+Through OpenCV - cascade classifier to training the different color checker, and produce training model: cascade.xml  
 PS. If you want to create the model yourself, please reference [OpenCV official documents](https://docs.opencv.org/master/dc/d88/tutorial_traincascade.html).
 
-Step2. Image processing
+Step2. Image processing  
 Take out the pure color checker image which is analyzed from training model. Deal with the tilt angle calibration and analyze the centroid for each small grid.  
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/process.gif)
 
