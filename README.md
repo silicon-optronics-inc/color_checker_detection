@@ -20,6 +20,7 @@ It’s a color checker detection utility for each pattern, and it only needs to 
 Step1. Set the relative path for OpenCV library in this project’s properties page and then compile this project.
 
 Step2. Create “in” & “out” directory beside the color_checker_detection.exe.
+
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/step2.jpg)
 
 Step3. Put an image into the “in” directory you just created.
