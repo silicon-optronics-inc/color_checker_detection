@@ -1,6 +1,6 @@
 # color_checker_detection
 It’s a color checker detection utility for each pattern, and it only needs to install OpenCV.  
-![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/demo.gif)  
+![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/demo.gif)  
 ※1 Last image [source](https://imgur.com/VUiuRTq)
 
 
@@ -21,7 +21,7 @@ It’s a color checker detection utility for each pattern, and it only needs to 
 Step1. Set the relative path for OpenCV library in this project’s properties page and then compile this project.
 
 Step2. Create “in” & “out” directory beside the color_checker_detection.exe.  
-![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/step2.jpg)
+![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/step2.jpg)
 
 Step3. Put an image into the “in” directory you just created.
 
@@ -40,7 +40,7 @@ PS. If you want to create the model yourself, please reference [OpenCV official 
 
 Step2. Image processing  
 Take out the pure color checker image which is analyzed from training model. Deal with the tilt angle calibration and analyze the centroid for each small grid.  
-![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/process.gif)
+![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/process.gif)
 
 
 ## 5 About
