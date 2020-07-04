@@ -1,6 +1,7 @@
 # color_checker_detection
 It’s a color checker detection utility for each pattern, and it only needs to install OpenCV.
-![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/demo.gif)
+![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/demo.gif)  
+※1 The last image source: https://imgur.com/VUiuRTq
 
 
 ## 1 Features
@@ -19,8 +20,7 @@ It’s a color checker detection utility for each pattern, and it only needs to 
 ## 3 Usage
 Step1. Set the relative path for OpenCV library in this project’s properties page and then compile this project.
 
-Step2. Create “in” & “out” directory beside the color_checker_detection.exe.
-
+Step2. Create “in” & “out” directory beside the color_checker_detection.exe.  
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/step2.jpg)
 
 Step3. Put an image into the “in” directory you just created.
@@ -39,12 +39,11 @@ Through OpenCV - cascade classifier to training the different color checker, and
 PS. If you want to create the model yourself, please reference [OpenCV official documents](https://docs.opencv.org/master/dc/d88/tutorial_traincascade.html).
 
 Step2. Image processing
-Take out the pure color checker image which is analyzed from training model. Deal with the tilt angle calibration and analyze the centroid for each small grid.
-
+Take out the pure color checker image which is analyzed from training model. Deal with the tilt angle calibration and analyze the centroid for each small grid.  
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/process.gif)
 
 
 ## 5 About
-This project is developed by [SOI](http://www.soinc.com.tw/en/). 
+This project is developed by [SOI](http://www.soinc.com.tw/en/).  
 [SOI](http://www.soinc.com.tw/en/)(Silicon Optronics, Inc.) is a CMOS image sensor design company founded in May 2004 and listed in the Taiwan Emerging Market under ticker number 3530. The management team is comprised of seasoned executives with extensive experience in pixel design, image processing algorithms, analog circuits, optoelectronic systems, supply chain management, and sales.
 
