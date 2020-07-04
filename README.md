@@ -1,13 +1,13 @@
 # color_checker_detection
-It’s a color checker detection utility for each pattern, and it only needs to install OpenCV.  
+It’s a color checker detection utility for each pattern, and environment only requires OpenCV.  
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/demo.gif)  
 **※1** This image [source](https://imgur.com/VUiuRTq)
 
 
 ## 1 Features
-* The algorithm is compatible for various color checker.
+* The algorithm is compatible with various color checker.
+* With the ability to locate/detect multi-color checker in an image.
 * With the ability to analyze color checker from special light source.
-* With the ability to analyze multi-color checker in an image.
 * ONLY need to install OpenCV 3.X or 4.X.
 
 
@@ -24,16 +24,16 @@ Step2. Create “image” directory in the output directory.
 
 Step3. Put an image into the “image” directory you just created.
 
-Step4. Run color_checker_detection.exe, and you could find the analyzed result in the “image” directory.
+Step4. Run color_checker_detection.exe, and find the inferenced result in the “image” directory.
 
 
 ## 4 Algorithm Concept
 Step1. AI training model  
-Through OpenCV - cascade classifier to training the different color checker, and produce training model: cascade.xml  
-PS. If you want to create the model yourself, please reference [OpenCV official documents](https://docs.opencv.org/master/dc/d88/tutorial_traincascade.html).
+Train the different color checker through OpenCV, and produce training model: cascade.xml  
+PS. If you want to train your own model, please reference [OpenCV official documents](https://docs.opencv.org/master/dc/d88/tutorial_traincascade.html).
 
 Step2. Image processing  
-Take out the pure color checker image which is analyzed from training model. Deal with the tilt angle calibration and analyze the centroid for each small grid.  
+Crop the pure color checker image which is inferenced from training model. Deal with the tilt angle calibration and analyze the centroid for each small grid.  
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/process.gif)
 
 
