@@ -20,17 +20,11 @@ It’s a color checker detection utility for each pattern, and it only needs to 
 ## 3 Usage
 Step1. Set the relative path for OpenCV library in this project’s properties page and then compile this project.
 
-Step2. Create “in” & “out” directory beside the color_checker_detection.exe.  
-![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/step2.jpg)
+Step2. Create “image” directory in the output directory.
 
-Step3. Put an image into the “in” directory you just created.
+Step3. Put an image into the “image” directory you just created.
 
-Step4. Change the g_input_img string for the input image in color_checker_detection.cpp.
-```c++
-string g_input_img = "image.jpg";
-```
-
-Step5. Run color_checker_detection.exe, and you could find the analyzed result in the “out” directory.
+Step4. Run color_checker_detection.exe, and you could find the analyzed result in the “image” directory.
 
 
 ## 4 Algorithm Concept
