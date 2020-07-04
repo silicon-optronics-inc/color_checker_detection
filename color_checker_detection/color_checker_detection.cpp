@@ -9,9 +9,8 @@ using namespace cv;
 #define OPENCV_4
 
 int g_detection_count = 0;
-string g_input_path = "in\\";
+string g_img_path = "image\\";
 string g_input_img = "image.jpg";
-string g_output_path = "out\\";
 string g_classifier_path = "cascade.xml";
 vector<Rect> g_rets;
 
@@ -75,7 +74,7 @@ int main()
     Point color_checker_top_left;
 
 #ifdef OPENCV_4
-    img = cv::imread(g_input_path + g_input_img, IMREAD_COLOR);
+    img = cv::imread(g_img_path + g_input_img, IMREAD_COLOR);
 #else
     img = cv::imread(g_input_path + g_input_img, CV_LOAD_IMAGE_COLOR);
 #endif // OPENCV_4
@@ -119,7 +118,7 @@ int main()
             }
 
             cout << "found it!" << endl;
-            imwrite(g_output_path + g_input_img + "-grid.jpg", img);
+            imwrite(g_img_path + g_input_img + "-grid.jpg", img);
         }
     }
 
