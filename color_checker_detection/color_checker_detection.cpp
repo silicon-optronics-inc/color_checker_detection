@@ -41,7 +41,7 @@ void detectAndDraw(
         gray, // input image
         objects, // place for the results
         1.1, // scale factor
-        5,
+        6,
 #ifdef OPENCV_4
         1, // (old format cascades only)
 #else
