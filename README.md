@@ -13,7 +13,7 @@ It’s a color checker detection utility for each pattern, and environment only 
 
 ## 2 Environment
 * Language: C++
-* IDE: Visual Studio 2017; However, this project uses standard C++ library only, so it could be coded & compiled on other C++ IDE
+* IDE: Visual Studio 2017; However, this project uses standard C++ library only, so it could be developed on other C++ IDE
 * Third party library: OpenCV 3.X or 4.X
 
 
