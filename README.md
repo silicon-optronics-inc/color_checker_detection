@@ -37,7 +37,10 @@ Crop the pure color checker image which is inferenced from training model. Deal 
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/process.gif)
 
 
-## 5 About
+## 5 References
+[colour-science/colour-checker-detection](https://github.com/colour-science/colour-checker-detection#installation)
+
+
+## 6 About
 This project is developed by [SOI](http://www.soinc.com.tw/en/).  
 [SOI](http://www.soinc.com.tw/en/)(Silicon Optronics, Inc.) is a CMOS image sensor design company founded in May 2004 and listed in the Taiwan Emerging Market under ticker number 3530. The management team is comprised of seasoned executives with extensive experience in pixel design, image processing algorithms, analog circuits, optoelectronic systems, supply chain management, and sales.
-
