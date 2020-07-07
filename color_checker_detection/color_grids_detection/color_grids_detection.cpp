@@ -3,20 +3,17 @@
 #include <cmath>
 #include "color_grids_detection.h"
 
-vector<Point> g_square_contour{ Point(0,0),Point(1,0),Point(1,1),Point(0,1) };
-
-Mat g_input_img;
-
 void ColorGridsDetection::FilterColorGrid(vector<vector<cv::Point>>& Contours, SmallGridSizeRange Grid_size_range, vector<double>& Match_value)
 {
     double area;
     double match_value;
+    vector<Point> square_contour{ Point(0,0),Point(1,0),Point(1,1),Point(0,1) };
 
     for (vector<vector<cv::Point>>::iterator it_contour = Contours.begin(); it_contour != Contours.end();)
     {
         area = contourArea(*it_contour);
 
-        match_value = matchShapes(*it_contour, g_square_contour, cv::CONTOURS_MATCH_I2, 0.0);
+        match_value = matchShapes(*it_contour, square_contour, cv::CONTOURS_MATCH_I2, 0.0);
 
         if (area > Grid_size_range.min_size && area < Grid_size_range.max_size && match_value < SQUARE_CORRELATION_ENDURANCE)
         {
@@ -33,7 +30,7 @@ void ColorGridsDetection::FilterColorGrid(vector<vector<cv::Point>>& Contours, S
 void ColorGridsDetection::FilterOutOverlapPoint(vector<vector<cv::Point>> Contours, vector<Point2f>& centers_position)
 {
     unsigned char inside_contour_count = 0;
-    unsigned char ret = 0;
+    signed char ret = 0;
     Point2f temp_center(0.0, 0.0);
 
     for (vector<vector<cv::Point>>::iterator it_contour = Contours.begin(); it_contour != Contours.end();)
@@ -45,7 +42,7 @@ void ColorGridsDetection::FilterOutOverlapPoint(vector<vector<cv::Point>> Contou
             temp_center = *it_center;
 
             ret = (int)pointPolygonTest(*it_contour, *it_center, false);
-            if (ret == 1 || ret == 0) //1:inside contour¡A0:outside contour
+            if (ret == 1 || ret == 0) //1:inside contour¡A0:on contour edge
             {
                 if (inside_contour_count >= 1)
                 {
@@ -58,7 +55,7 @@ void ColorGridsDetection::FilterOutOverlapPoint(vector<vector<cv::Point>> Contou
 
                 inside_contour_count++;
             }
-            else
+            else //outside contour
             {
                 it_center++;
             }
@@ -127,8 +124,6 @@ void ColorGridsDetection::GetSmallGridSizeRange(Mat Color_checker_image, SmallGr
 
 bool ColorGridsDetection::DetectColorGrids(Mat Color_checker_img, Point grids_position[TOTAL_ROWS][TOTAL_COLUMNS])
 {
-    Color_checker_img.copyTo(g_input_img);
-
     Mat gray_img(Color_checker_img.size(), CV_8UC1);
     cvtColor(Color_checker_img, gray_img, cv::COLOR_RGB2GRAY);
 
