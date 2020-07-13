@@ -31,7 +31,6 @@ void ColorGridsDetection::FilterOutOverlapPoint(vector<vector<cv::Point>> Contou
 {
     unsigned char inside_contour_count = 0;
     signed char ret = 0;
-    Point2f temp_center(0.0, 0.0);
 
     for (vector<vector<cv::Point>>::iterator it_contour = Contours.begin(); it_contour != Contours.end();)
     {
@@ -39,8 +38,6 @@ void ColorGridsDetection::FilterOutOverlapPoint(vector<vector<cv::Point>> Contou
 
         for (vector<Point2f>::iterator it_center = centers_position.begin(); it_center != centers_position.end();)
         {
-            temp_center = *it_center;
-
             ret = (int)pointPolygonTest(*it_contour, *it_center, false);
             if (ret == 1 || ret == 0) //1:inside contour¡A0:on contour edge
             {

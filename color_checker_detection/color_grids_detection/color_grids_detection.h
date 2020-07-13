@@ -28,7 +28,7 @@ typedef struct SmallGridSizeRange
 
 struct less_than_key
 {
-    inline bool operator() (const Point& struct1, const Point& struct2)
+    inline bool operator() (const Point2f& struct1, const Point2f& struct2)
     {
         return (struct1.y < struct2.y);
     }
