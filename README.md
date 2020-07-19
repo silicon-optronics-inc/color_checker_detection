@@ -22,7 +22,7 @@ Step1. Set the relative path for OpenCV library in this project’s properties p
 
 Step2. Create “image” directory inside the output directory.
 
-Step3. Put an image into the “image” directory just created.
+Step3. Put an "image.jpg" into the “image” directory just created.
 
 Step4. Run color_checker_detection.exe, and find the inferenced result inside the “image” directory.
 
