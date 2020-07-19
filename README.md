@@ -1,7 +1,9 @@
 # color_checker_detection
 It’s a color checker detection utility for each pattern, and environment only requires OpenCV.  
 ![image](https://github.com/silicon-optronics-inc/color_checker_detection/blob/master/doc/demo.gif)  
-**※1** This image [source](https://imgur.com/VUiuRTq)
+**※1** This image [source](https://imgur.com/VUiuRTq)  
+
+Also [implement it by Pyhon](https://github.com/silicon-optronics-inc/color_checker_detection_pyhon) on 2020/07/19.  
 
 
 ## 1 Features
