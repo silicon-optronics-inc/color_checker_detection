@@ -122,7 +122,7 @@ void ColorGridsDetection::GetSmallGridSizeRange(Mat Color_checker_image, SmallGr
 bool ColorGridsDetection::DetectColorGrids(Mat Color_checker_img, Point grids_position[TOTAL_ROWS][TOTAL_COLUMNS])
 {
     Mat gray_img(Color_checker_img.size(), CV_8UC1);
-    cvtColor(Color_checker_img, gray_img, cv::COLOR_RGB2GRAY);
+    cvtColor(Color_checker_img, gray_img, cv::COLOR_BGR2GRAY);
 
     Mat denoise_img;
     fastNlMeansDenoising(gray_img, denoise_img, 10, 7, 21); //book P313
